@@ -9,7 +9,6 @@ contract ERC20 {
     event Transfer(address indexed from, address indexed to, uint tokens);
 
     mapping(address => uint256) balances;
-    mapping(address => mapping (address => uint256)) allowed;
 
     uint256 private _totalSupply;
     string public name;
