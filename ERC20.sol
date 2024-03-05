@@ -6,7 +6,6 @@ import "./SafeMath.sol";
 contract ERC20 {
     using SafeMath for uint256;
 
-    event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
     event Transfer(address indexed from, address indexed to, uint tokens);
 
     mapping(address => uint256) balances;
